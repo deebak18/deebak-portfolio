@@ -116,3 +116,39 @@
     }
   }
 }
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .image-placeholder {
+    width: 200px;
+    height: 200px;
+    
+    .initials {
+      font-size: 3rem;
+    }
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    
+    .btn {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}

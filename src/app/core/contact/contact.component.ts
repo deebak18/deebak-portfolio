@@ -9,7 +9,7 @@ export class ContactComponent {
   contactInfo = {
     email: 'deebakperumal@gmail.com',
     linkedin: 'linkedin.com/in/deebak-p',
-    github: 'github.com/deebak-p'
+    github: 'github.com/deebak18'
   };
 
   formData = {

@@ -7,15 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
   skills = [
-    { name: 'Angular', level: 90, icon: '⚡' },
-    { name: 'TypeScript', level: 85, icon: '📘' },
-    { name: 'Java', level: 88, icon: '☕' },
-    { name: 'Spring Boot', level: 85, icon: '🌱' },
-    { name: 'Microservices', level: 80, icon: '🔧' },
-    { name: 'Kafka', level: 75, icon: '📨' },
-    { name: 'AWS', level: 78, icon: '☁️' },
-    { name: 'Docker', level: 82, icon: '🐳' },
-    { name: 'SQL', level: 85, icon: '🗄️' },
-    { name: 'REST APIs', level: 88, icon: '🌐' }
+    { name: 'Angular', level: 'Advanced', icon: '⚡' },
+    { name: 'TypeScript', level: 'Advanced', icon: '📘' },
+    { name: 'Java', level: 'Advanced', icon: '☕' },
+    { name: 'Spring Boot', level: 'Advanced', icon: '🌱' },
+    { name: 'Microservices', level: 'Advanced', icon: '🔧' },
+    { name: 'Kafka', level: 'Intermediate', icon: '📨' },
+    { name: 'AWS', level: 'Intermediate', icon: '☁️' },
+    { name: 'Docker', level: 'Intermediate', icon: '🐳' },
+    { name: 'SQL', level: 'Intermediate', icon: '🗄️' },
+    { name: 'REST APIs', level: 'Advanced', icon: '🌐' }
   ];
 }

@@ -128,6 +128,10 @@
 }
 
 @media (max-width: 768px) {
+  .experience-section {
+    padding: 3rem 0;
+  }
+  
   .timeline {
     &::before {
       left: 30px;
@@ -137,14 +141,40 @@
   .experience-card {
     flex-direction: row !important;
     padding-left: 3rem;
+    gap: 1rem;
     
     .experience-content {
       text-align: left !important;
+      padding: 1.5rem;
     }
   }
   
   .experience-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+  
+  .experience-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .experience-card {
+    padding-left: 2.5rem;
+  }
+  
+  .experience-content {
+    padding: 1.25rem !important;
+  }
+  
+  .experience-header h3 {
+    font-size: 1.2rem;
   }
 }

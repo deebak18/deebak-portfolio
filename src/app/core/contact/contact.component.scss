@@ -133,3 +133,35 @@
     gap: 2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-form {
+    padding: 1.5rem;
+  }
+  
+  .info-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .contact-form {
+    padding: 1.25rem;
+  }
+  
+  .info-card {
+    padding: 1.25rem;
+  }
+  
+  .info-icon {
+    font-size: 2rem;
+  }
+}
