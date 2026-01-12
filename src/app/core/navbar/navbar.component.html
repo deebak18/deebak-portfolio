@@ -1,0 +1,16 @@
+<nav class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <a routerLink="/">DP</a>
+    </div>
+    
+    <ul class="nav-menu">
+      <li><a routerLink="" [class.active]="isActive('')" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="about" [class.active]="isActive('about')" routerLinkActive="active">About</a></li>
+      <li><a routerLink="skills" [class.active]="isActive('skills')" routerLinkActive="active">Skills</a></li>
+      <li><a routerLink="experience" [class.active]="isActive('experience')" routerLinkActive="active">Experience</a></li>
+      <li><a routerLink="projects" [class.active]="isActive('projects')" routerLinkActive="active">Projects</a></li>
+      <li><a routerLink="contact" [class.active]="isActive('contact')" routerLinkActive="active">Contact</a></li>
+    </ul>
+  </div>
+</nav>

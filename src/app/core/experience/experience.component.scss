@@ -1,0 +1,150 @@
+.experience-section {
+  padding: 5rem 0;
+  background: var(--bg-secondary);
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--border-color);
+    transform: translateX(-50%);
+  }
+}
+
+.experience-card {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  animation: fadeInUp 0.8s ease-out;
+  
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+    
+    .experience-content {
+      text-align: right;
+    }
+  }
+  
+  &:nth-child(1) { animation-delay: 0.1s; }
+  &:nth-child(2) { animation-delay: 0.3s; }
+}
+
+.experience-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+  box-shadow: var(--shadow);
+  position: relative;
+  z-index: 1;
+}
+
+.experience-content {
+  flex: 1;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+  }
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  
+  h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  .company {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+}
+
+.client {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.period {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.description {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.tech-tag {
+  background: var(--bg-secondary);
+  color: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .timeline {
+    &::before {
+      left: 30px;
+    }
+  }
+  
+  .experience-card {
+    flex-direction: row !important;
+    padding-left: 3rem;
+    
+    .experience-content {
+      text-align: left !important;
+    }
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

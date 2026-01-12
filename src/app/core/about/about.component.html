@@ -1,0 +1,30 @@
+<section class="about-section">
+  <div class="container">
+    <div class="about-content">
+      <div class="about-image">
+        <div class="image-placeholder">
+          <span class="initials">DP</span>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2 class="section-title">About Me</h2>
+        <p class="intro-text">
+          Hi, I'm <strong>{{ about.name }}</strong>, a {{ about.title }} with {{ about.experience }} of experience.
+        </p>
+        <p class="description">{{ about.description }}</p>
+        
+        <div class="highlights">
+          <h3>Key Highlights</h3>
+          <ul>
+            <li *ngFor="let highlight of about.highlights">{{ highlight }}</li>
+          </ul>
+        </div>
+        
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
+          <a href="#projects" class="btn btn-secondary">View Projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

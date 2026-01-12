@@ -1,0 +1,24 @@
+<section class="experience-section">
+  <div class="container">
+    <h2 class="section-title">Professional Experience</h2>
+    <p class="section-subtitle">My career journey</p>
+    
+    <div class="timeline">
+      <div class="experience-card" *ngFor="let exp of experiences">
+        <div class="experience-icon">{{ exp.icon }}</div>
+        <div class="experience-content">
+          <div class="experience-header">
+            <h3>{{ exp.role }}</h3>
+            <span class="company">{{ exp.company }}</span>
+          </div>
+          <p class="client">{{ exp.client }}</p>
+          <p class="period">{{ exp.period }}</p>
+          <p class="description">{{ exp.description }}</p>
+          <div class="tech-tags">
+            <span class="tech-tag" *ngFor="let tech of exp.technologies">{{ tech }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

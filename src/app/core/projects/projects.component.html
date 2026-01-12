@@ -1,0 +1,20 @@
+<section class="projects-section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Some of my recent work</p>
+    
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of projects">
+        <div class="project-icon">{{ project.icon }}</div>
+        <h3>{{ project.name }}</h3>
+        <p>{{ project.desc }}</p>
+        <div class="project-tech">
+          <span class="tech-badge" *ngFor="let tech of project.tech">{{ tech }}</span>
+        </div>
+        <a [href]="project.link" class="project-link" target="_blank">
+          View Project →
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
