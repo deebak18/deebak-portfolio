@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
@@ -7,20 +6,11 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrl: './navbar.component.scss'
 })
 export class NavbarComponent {
-  currentRoute = '';
-
-  constructor(private router: Router) {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        this.currentRoute = event.url;
-      }
-    });
-  }
-
-  isActive(route: string): boolean {
-    if (route === '' && this.currentRoute === '/') {
-      return true;
-    }
-    return this.currentRoute === `/${route}`;
+  downloadResume() {
+    // Create a link element and trigger download
+    const link = document.createElement('a');
+    link.href = '/assets/resume.pdf';
+    link.download = 'Deebak_P_Resume.pdf';
+    link.click();
   }
 }

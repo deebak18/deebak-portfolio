@@ -52,6 +52,7 @@
       transition: all 0.3s ease;
       position: relative;
       padding: 8px 0;
+      cursor: pointer;
       
       &::after {
         content: '';
@@ -70,6 +71,24 @@
         
         &::after {
           width: 100%;
+        }
+      }
+      
+      &.resume-btn {
+        background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+        color: white;
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-weight: 600;
+        
+        &::after {
+          display: none;
+        }
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+          color: white;
         }
       }
     }

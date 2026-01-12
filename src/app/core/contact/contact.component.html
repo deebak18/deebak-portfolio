@@ -22,6 +22,12 @@
           <h3>GitHub</h3>
           <a [href]="'https://' + contactInfo.github" target="_blank">{{ contactInfo.github }}</a>
         </div>
+        
+        <div class="info-card resume-card">
+          <div class="info-icon">📄</div>
+          <h3>Resume</h3>
+          <a (click)="downloadResume()" class="resume-download-link">Download Resume</a>
+        </div>
       </div>
       
       <form class="contact-form" (ngSubmit)="onSubmit()">

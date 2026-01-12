@@ -24,4 +24,11 @@ export class ContactComponent {
     alert('Thank you for your message! I will get back to you soon.');
     this.formData = { name: '', email: '', message: '' };
   }
+
+  downloadResume() {
+    const link = document.createElement('a');
+    link.href = '/assets/resume.pdf';
+    link.download = 'Deebak_P_Resume.pdf';
+    link.click();
+  }
 }

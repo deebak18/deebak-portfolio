@@ -17,4 +17,11 @@ export class HomeComponent {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+  
+  downloadResume() {
+    const link = document.createElement('a');
+    link.href = '/assets/resume.pdf';
+    link.download = 'Deebak_P_Resume.pdf';
+    link.click();
+  }
 }
